@@ -164,7 +164,7 @@
     "module_student_alumni" : "Student Alumni|Student Alumni",
     
     "module_academic" : "Academic|Academic",
-    "module_faculty" : "Faculty|Faculties",
+    "module_faculty" : "Corporación tecnológica de Bogotá|Corporación tecnológica de Bogotá",
     "module_program" : "Program|Programs",
     "module_batch" : "Batch|Batches",
     "module_session" : "Session|Sessions",
@@ -305,8 +305,6 @@
     "module_application_setting" : "Online Application|Online Applications",
     "module_profile" : "My Profile|My Profile",
     "module_notification" : "Notification|Notifications",
-    
-
     
     "field_no" : "No",
     "field_key" : "Key",
@@ -749,6 +747,7 @@
     "tab_fees_assign" : "Fees Assign",
     "tab_book_issues" : "Book Issues",
     "tab_leave" : "Leave",
+    "tab_more_documents":"More documents",
 
 
     "gender_male" : "Male",
@@ -817,5 +816,13 @@
 
 
     "direction_ltr" : "LTR",
-    "direction_rtl" : "RTL"
+    "direction_rtl" : "RTL",
+
+
+    "field_plan_estudios":"Curriculum",
+    "field_title_get":"Title to get",
+    "field_code_snies":"Code SNIES",
+    "field_validity_stydy_init":"Validity init",
+    "field_validity_stydy_end":"Validity end"
+
 }

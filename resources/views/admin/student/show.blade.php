@@ -767,19 +767,44 @@
                                                 @endif
                                                 </td>
                                             </tr>
-                                            @foreach($student->documents as $document)
+                                            @if(is_file('storage/app/'.$student->national_id.'/icfes.pdf'))
+                                                <tr>
+                                                    <td>Icfes</td>
+                                                    <td>            
+                                                        <a target="__blank" href="{{ asset('storage/app/'.$student->national_id.'/icfes.pdf') }}" class="btn btn-sm btn-icon btn-dark" download><i class="fas fa-download"></i></a>
+                                                    </td>
+                                                </tr>
+                                            @endif
+                                            @if(is_file('storage/app/'.$student->national_id.'/acta_grado.pdf'))
+                                                <tr>
+                                                    <td>Acta de grado</td>
+                                                    <td>            
+                                                        <a target="__blank" href="{{ asset('storage/app/'.$student->national_id.'/acta_grado.pdf') }}" class="btn btn-sm btn-icon btn-dark" download><i class="fas fa-download"></i></a>
+                                                    </td>
+                                                </tr>
+                                            @endif
+                                            
+                                            {{-- @foreach($student->documents as $document)
                                             <tr>
+                                                
                                                 <td>{{ $document->title }}</td>
                                                 <td>
                                                 @if(is_file('uploads/'.$path.'/'.$document->attach))
+                                                {{$document->attach}}
                                                 <a target="__blank" href="{{ asset('uploads/'.$path.'/'.$document->attach) }}" class="btn btn-sm btn-icon btn-dark" download><i class="fas fa-download"></i></a>
                                                 @endif
                                                 </td>
                                             </tr>
-                                            @endforeach
+                                            @endforeach --}}
                                         </tbody>
                                     </table>
                                 </div>
+                                {{-- <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="" data-bs-toggle="" target="_blank" href="https://dev.teduca.co/preinscripcion/wp-content/uploads/elementor/pdf/DOCS_PREINSCRIPCION/{{$student->national_id}} "role="tab" aria-controls="pills-transcript" aria-selected="true">{{ __('tab_more_documents') }}</a>
+                                    </li>
+                                </ul> --}}
+                                
                                 <!-- [ Data table ] end -->
                             </div>
                         </div>

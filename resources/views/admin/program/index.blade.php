@@ -32,31 +32,59 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="title" class="form-label">{{ __('field_title') }} <span>*</span></label>
+                                {{-- <label for="title" class="form-label">Programa<span>*</span></label> --}}
+                                <label for="title" class="form-label">{{ __('field_program') }} <span>*</span></label>
                                 <input type="text" class="form-control" name="title" id="title" value="{{ old('title') }}" required>
 
                                 <div class="invalid-feedback">
-                                  {{ __('required_field') }} {{ __('field_title') }}
+                                  {{ __('required_field') }} {{ __('field_program') }}
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label for="shortcode" class="form-label">{{ __('field_shortcode') }} <span>*</span></label>
+                                <label for="shortcode" class="form-label">{{ __('field_plan_estudios') }} <span>*</span></label>
                                 <input type="text" class="form-control" name="shortcode" id="shortcode" value="{{ old('shortcode') }}" required>
 
                                 <div class="invalid-feedback">
-                                  {{ __('required_field') }} {{ __('field_shortcode') }}
+                                  {{ __('required_field') }} {{ __('field_plan_estudios') }}
                                 </div>
                             </div>
+                            {{-- custom --}}
+                            <div class="form-group">
+                                <label for="shortcode" class="form-label">{{ __('field_title_get') }} <span>*</span></label>
+                                <input type="text" class="form-control" name="shortcode" id="shortcode" value="{{ old('shortcode') }}" required>
 
-                            {{-- <div class="form-group">
-                                <div class="switch d-inline m-r-10">
-                                    <input type="checkbox" id="switch" name="registration" value="1" checked>
-                                    <label for="switch" class="cr"></label>
+                                <div class="invalid-feedback">
+                                  {{ __('required_field') }} {{ __('field_title_get') }}
                                 </div>
-                                <label>{{ __('field_registration') }}</label>
-                            </div> --}}
-                            <!-- Form End -->
+                            </div>
+                            <div class="form-group">
+                                <label for="shortcode" class="form-label">{{ __('field_code_snies') }} <span>*</span></label>
+                                <input type="number" class="form-control" name="shortcode" id="shortcode" value="{{ old('shortcode') }}" required>
+
+                                <div class="invalid-feedback">
+                                  {{ __('required_field') }} {{ __('field_code_snies') }}
+                                </div>
+                            </div>
+                            <div class="form-group">
+                            {{-- <div class="form-group col-md-6"> --}}
+                                <label for="shortcode" class="form-label">{{ __('field_validity_stydy_init') }} <span>*</span></label>
+                                <input type="date" class="form-control date" name="admission_date" id="admission_date" value="{{ date('Y-m-d') }}" required>
+
+                                <div class="invalid-feedback">
+                                  {{ __('required_field') }} {{ __('field_validity_stydy_init') }}
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="shortcode" class="form-label">{{ __('field_validity_stydy_end') }} <span>*</span></label>
+                                <input type="date" class="form-control date" name="admission_date" id="admission_date" value="{{ date('Y-m-d') }}" required>
+
+                                <div class="invalid-feedback">
+                                  {{ __('required_field') }} {{ __('field_validity_stydy_end') }}
+                                </div>
+                            </div>
+                            {{-- fin custom --}}
+                                            
                         </div>
                         <div class="card-footer">
                             <button type="submit" class="btn btn-success"><i class="fas fa-check"></i> {{ __('btn_save') }}</button>
@@ -77,8 +105,8 @@
                                 <thead>
                                     <tr>
                                         <th>#</th>
-                                        <th>{{ __('field_title') }}</th>
-                                        <th>{{ __('field_shortcode') }}</th>
+                                        <th>{{ __('field_program') }}</th>
+                                        <th>{{ __('field_plan_estudios') }}</th>
                                         <th>{{ __('field_faculty') }}</th>
                                         {{-- <th>{{ __('field_registration') }}</th> --}}
                                         <th>{{ __('field_status') }}</th>
