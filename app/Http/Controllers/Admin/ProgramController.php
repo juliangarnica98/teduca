@@ -76,6 +76,11 @@ class ProgramController extends Controller
             'faculty' => 'required',
             'title' => 'required|max:191|unique:programs,title',
             'shortcode' => 'required|max:191|unique:programs,shortcode',
+            'title_get'=> 'required',
+            'code_snies'=>'required',
+            'validity_init'=>'required',
+            'validity_end'=>'required',
+
         ]);
 
         // Registration status
@@ -93,6 +98,10 @@ class ProgramController extends Controller
         $program->slug = Str::slug($request->title, '-');
         $program->shortcode = $request->shortcode;
         $program->registration = $registration;
+        $program->title_get = $request->title_get;
+        $program->code_snies = $request->code_snies;
+        $program->validity_init = $request->validity_init;
+        $program->validity_end = $request->validity_end;
         $program->save();
 
 
@@ -137,6 +146,11 @@ class ProgramController extends Controller
             'faculty' => 'required',
             'title' => 'required|max:191|unique:programs,title,'.$program->id,
             'shortcode' => 'required|max:191|unique:programs,shortcode,'.$program->id,
+            'title_get'=> 'required',
+            'code_snies'=>'required',
+            'validity_init'=>'required',
+            'validity_end'=>'required',
+            
         ]);
 
         // Registration status
@@ -154,6 +168,10 @@ class ProgramController extends Controller
         $program->shortcode = $request->shortcode;
         $program->registration = $registration;
         $program->status = $request->status;
+        $program->title_get = $request->title_get;
+        $program->code_snies = $request->code_snies;
+        $program->validity_init = $request->validity_init;
+        $program->validity_end = $request->validity_end;
         $program->save();
 
 

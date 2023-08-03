@@ -43,7 +43,45 @@
                           {{ __('required_field') }} {{ __('field_shortcode') }}
                         </div>
                     </div>
+                    
+                    {{-- custom --}}
+                    <div class="form-group">
+                        <label for="title_get" class="form-label">{{ __('field_title_get') }} <span>*</span></label>
+                        <input type="text" class="form-control" name="title_get" id="title_get" value="{{ $row->title_get }}" required>
 
+                        <div class="invalid-feedback">
+                          {{ __('required_field') }} {{ __('field_title_get') }}
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="code_snies" class="form-label">{{ __('field_code_snies') }} <span>*</span></label>
+                        <input type="number" class="form-control" name="code_snies" id="code_snies" value="{{ $row->code_snies }}" required>
+
+                        <div class="invalid-feedback">
+                          {{ __('required_field') }} {{ __('field_code_snies') }}
+                        </div>
+                    </div>
+                    <div class="form-group">
+                    {{-- <div class="form-group col-md-6"> --}}
+                        <label for="validity_init" class="form-label">{{ __('validity_init') }} <span>*</span></label>
+                        <input type="date" class="form-control date" name="validity_init" id="validity_init" value="{{ $row->validity_init }}" required>
+
+                        <div class="invalid-feedback">
+                          {{ __('required_field') }} {{ __('validity_init') }}
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="validity_end" class="form-label">{{ __('validity_end') }} <span>*</span></label>
+                        <input type="date" class="form-control date" name="validity_end" id="validity_end" value="{{ $row->validity_end }}" required>
+
+                        <div class="invalid-feedback">
+                          {{ __('required_field') }} {{ __('validity_end') }}
+                        </div>
+                    </div>
+
+
+                    {{-- end custom --}}
+                    
                     {{-- <div class="form-group">
                         <div class="switch d-inline m-r-10">
                             <input type="checkbox" id="switch-{{ $row->id }}" name="registration" value="1" @if($row->registration == 1) checked @endif>

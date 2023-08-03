@@ -714,6 +714,8 @@
 
     "subject_type_compulsory" : "Compulsory",
     "subject_type_optional" : "Optional",
+    "subject_type_flex": "Flexible",
+    "subject_type_elective": "Elective",
     "class_type_theory" : "Theory",
     "class_type_practical" : "Practical",
     "class_type_both" : "Both",
@@ -822,7 +824,18 @@
     "field_plan_estudios":"Curriculum",
     "field_title_get":"Title to get",
     "field_code_snies":"Code SNIES",
-    "field_validity_stydy_init":"Validity init",
-    "field_validity_stydy_end":"Validity end"
+    "validity_init":"Validity init",
+    "validity_end":"Validity end",
+
+    "field_intensity":"Intensity",
+    "theoretical_unit":"Theoretical unit",
+    "practical_unit":"Practical unit",
+    "minimum_note":"Minimum note",
+    "maximum_note":"Maximum note",
+    "passing_grade":"passing_grade",
+    "homologable":"Homologable",
+    "minimum_grade_approved":"Minimum grade approved",
+    "field_start":"Start",
+    "field_ends":"Ends"
 
 }

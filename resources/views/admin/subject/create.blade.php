@@ -77,8 +77,97 @@
                               {{ __('required_field') }} {{ __('field_class_type') }}
                             </div>
                         </div>
+                        {{-- custom --}}
+                        <div class="form-group col-md-4">
+                            <label for="credit_hour">{{ __('field_intensity') }} <span>*</span></label>
+                            <input type="number" class="form-control autonumber" name="field_intensity" id="field_intensity" value="{{ old('field_intensity') }}" required data-v-max="999999999" data-v-min="0">
 
-                        <div class="form-group col-md-4"></div>
+                            <div class="invalid-feedback">
+                              {{ __('required_field') }} {{ __('field_intensity') }}
+                            </div>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="credit_hour">{{ __('theoretical_unit') }} <span>*</span></label>
+                            <input type="number" class="form-control autonumber" name="theoretical_unit" id="theoretical_unit" value="{{ old('theoretical_unit') }}" required data-v-max="999999999" data-v-min="0">
+
+                            <div class="invalid-feedback">
+                              {{ __('required_field') }} {{ __('theoretical_unit') }}
+                            </div>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="credit_hour">{{ __('practical_unit') }} <span>*</span></label>
+                            <input type="number" class="form-control autonumber" name="practical_unit" id="practical_unit" value="{{ old('practical_unit') }}" required data-v-max="999999999" data-v-min="0">
+
+                            <div class="invalid-feedback">
+                              {{ __('required_field') }} {{ __('practical_unit') }}
+                            </div>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="credit_hour">{{ __('minimum_note') }} <span>*</span></label>
+                            <input type="number" class="form-control autonumber" name="minimum_note" id="minimum_note" value="{{ old('minimum_note') }}" required data-v-max="999999999" data-v-min="0">
+
+                            <div class="invalid-feedback">
+                              {{ __('required_field') }} {{ __('minimum_note') }}
+                            </div>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="credit_hour">{{ __('maximum_note') }} <span>*</span></label>
+                            <input type="number" class="form-control autonumber" name="maximum_note" id="maximum_note" value="{{ old('maximum_note') }}" required data-v-max="999999999" data-v-min="0">
+
+                            <div class="invalid-feedback">
+                              {{ __('required_field') }} {{ __('maximum_note') }}
+                            </div>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="credit_hour">{{ __('passing_grade') }} <span>*</span></label>
+                            <input type="number" class="form-control autonumber" name="passing_grade" id="passing_grade" value="{{ old('passing_grade') }}" required data-v-max="999999999" data-v-min="0">
+
+                            <div class="invalid-feedback">
+                              {{ __('required_field') }} {{ __('passing_grade') }}
+                            </div>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="homologable">{{ __('homologable') }} <span>*</span></label>
+                            <select class="form-control" name="homologable" id="class_type" required>
+                                <option value="">{{ __('select') }}</option>
+                                <option value="SI" >{{ __('SI') }}</option>
+                                <option value="NO" >{{ __('NO') }}</option>
+                            </select>
+                            {{-- <input type="text" class="form-control autonumber" name="homologable" id="homologable" value="{{ old('homologable') }}" required data-v-max="999999999" data-v-min="0"> --}}
+
+                            <div class="invalid-feedback">
+                              {{ __('required_field') }} {{ __('homologable') }}
+                            </div>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="credit_hour">{{ __('minimum_grade_approved') }} <span>*</span></label>
+                            <input type="number" class="form-control autonumber" name="minimum_grade_approved" id="minimum_grade_approved" value="{{ old('minimum_grade_approved') }}" required data-v-max="999999999" data-v-min="0">
+
+                            <div class="invalid-feedback">
+                              {{ __('required_field') }} {{ __('minimum_grade_approved') }}
+                            </div>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="credit_hour">{{ __('field_start') }} <span>*</span></label>
+                            <input type="date" class="form-control autonumber" name="field_start" id="field_start" value="{{ old('field_start') }}" required data-v-max="999999999" data-v-min="0">
+
+                            <div class="invalid-feedback">
+                              {{ __('required_field') }} {{ __('field_start') }}
+                            </div>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="credit_hour">{{ __('field_ends') }} <span>*</span></label>
+                            <input type="date" class="form-control autonumber" name="field_ends" id="field_ends" value="{{ old('field_ends') }}" required data-v-max="999999999" data-v-min="0">
+
+                            <div class="invalid-feedback">
+                              {{ __('required_field') }} {{ __('field_ends') }}
+                            </div>
+                        </div>
+                    
+                        {{-- custom --}}
+
+                        {{-- <div class="form-group col-md-4"></div>
+                        <div class="form-group col-md-4"></div> --}}
 
                         @foreach($faculties as $index => $faculty)
                         <div class="form-group col-md-6 col-lg-4 p-15">

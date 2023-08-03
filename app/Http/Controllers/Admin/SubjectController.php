@@ -142,6 +142,16 @@ class SubjectController extends Controller
             'credit_hour' => 'required',
             'subject_type' => 'required',
             'class_type' => 'required',
+            'field_intensity'=> 'required',
+            'theoretical_unit'=> 'required',
+            'practical_unit'=> 'required',
+            'minimum_note'=> 'required',
+            'maximum_note'=> 'required',
+            'passing_grade'=> 'required',
+            'homologable'=> 'required',
+            'minimum_grade_approved'=> 'required',
+            'field_start'=> 'required',
+            'field_ends'=> 'required'
         ]);
 
 
@@ -156,6 +166,16 @@ class SubjectController extends Controller
         $subject->total_marks = $request->total_marks;
         $subject->passing_marks = $request->passing_marks;
         $subject->description = $request->description;
+        $subject->field_intensity= $request->field_intensity;
+        $subject->theoretical_unit= $request->theoretical_unit;
+        $subject->practical_unit= $request->practical_unit;
+        $subject->minimum_note= $request->minimum_note;
+        $subject->maximum_note= $request->maximum_note;
+        $subject->passing_grade= $request->passing_grade;
+        $subject->homologable= $request->homologable;
+        $subject->minimum_grade_approved= $request->minimum_grade_approved;
+        $subject->field_start= $request->field_start;
+        $subject->field_ends= $request->field_ends;
         $subject->save();
 
         // Attach
@@ -222,6 +242,16 @@ class SubjectController extends Controller
             'credit_hour' => 'required',
             'subject_type' => 'required',
             'class_type' => 'required',
+            'field_intensity'=> 'required',
+            'theoretical_unit'=> 'required',
+            'practical_unit'=> 'required',
+            'minimum_note'=> 'required',
+            'maximum_note'=> 'required',
+            'passing_grade'=> 'required',
+            'homologable'=> 'required',
+            'minimum_grade_approved'=> 'required',
+            'field_start'=> 'required',
+            'field_ends'=> 'required'
         ]);
 
 
@@ -236,6 +266,16 @@ class SubjectController extends Controller
         $subject->passing_marks = $request->passing_marks;
         $subject->description = $request->description;
         $subject->status = $request->status;
+        $subject->field_intensity= $request->field_intensity;
+        $subject->theoretical_unit= $request->theoretical_unit;
+        $subject->practical_unit= $request->practical_unit;
+        $subject->minimum_note= $request->minimum_note;
+        $subject->maximum_note= $request->maximum_note;
+        $subject->passing_grade= $request->passing_grade;
+        $subject->homologable= $request->homologable;
+        $subject->minimum_grade_approved= $request->minimum_grade_approved;
+        $subject->field_start= $request->field_start;
+        $subject->field_ends= $request->field_ends;
         $subject->save();
 
         // Attach Update

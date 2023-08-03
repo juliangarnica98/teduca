@@ -13,6 +13,8 @@ class Subject extends Model
      */
     protected $fillable = [
         'title', 'code', 'credit_hour', 'subject_type', 'class_type', 'total_marks', 'passing_marks', 'description', 'status',
+        'field_intensity','theoretical_unit','practical_unit','minimum_note','maximum_note','passing_grade','homologable','minimum_grade_approved',
+        'field_start','field_ends'
     ];
 
     public function programs()

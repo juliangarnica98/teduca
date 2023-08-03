@@ -49,18 +49,20 @@
                                   {{ __('required_field') }} {{ __('field_plan_estudios') }}
                                 </div>
                             </div>
+
+
                             {{-- custom --}}
                             <div class="form-group">
-                                <label for="shortcode" class="form-label">{{ __('field_title_get') }} <span>*</span></label>
-                                <input type="text" class="form-control" name="shortcode" id="shortcode" value="{{ old('shortcode') }}" required>
+                                <label for="title_get" class="form-label">{{ __('field_title_get') }} <span>*</span></label>
+                                <input type="text" class="form-control" name="title_get" id="title_get" value="{{ old('title_get') }}" required>
 
                                 <div class="invalid-feedback">
                                   {{ __('required_field') }} {{ __('field_title_get') }}
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="shortcode" class="form-label">{{ __('field_code_snies') }} <span>*</span></label>
-                                <input type="number" class="form-control" name="shortcode" id="shortcode" value="{{ old('shortcode') }}" required>
+                                <label for="code_snies" class="form-label">{{ __('field_code_snies') }} <span>*</span></label>
+                                <input type="number" class="form-control" name="code_snies" id="code_snies" value="{{ old('code_snies') }}" required>
 
                                 <div class="invalid-feedback">
                                   {{ __('required_field') }} {{ __('field_code_snies') }}
@@ -68,23 +70,25 @@
                             </div>
                             <div class="form-group">
                             {{-- <div class="form-group col-md-6"> --}}
-                                <label for="shortcode" class="form-label">{{ __('field_validity_stydy_init') }} <span>*</span></label>
-                                <input type="date" class="form-control date" name="admission_date" id="admission_date" value="{{ date('Y-m-d') }}" required>
+                                <label for="validity_init" class="form-label">{{ __('validity_init') }} <span>*</span></label>
+                                <input type="date" class="form-control date" name="validity_init" id="validity_init" value="{{ date('Y-m-d') }}" required>
 
                                 <div class="invalid-feedback">
-                                  {{ __('required_field') }} {{ __('field_validity_stydy_init') }}
+                                  {{ __('required_field') }} {{ __('validity_init') }}
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="shortcode" class="form-label">{{ __('field_validity_stydy_end') }} <span>*</span></label>
-                                <input type="date" class="form-control date" name="admission_date" id="admission_date" value="{{ date('Y-m-d') }}" required>
+                                <label for="validity_end" class="form-label">{{ __('validity_end') }} <span>*</span></label>
+                                <input type="date" class="form-control date" name="validity_end" id="validity_end" value="{{ date('Y-m-d') }}" required>
 
                                 <div class="invalid-feedback">
-                                  {{ __('required_field') }} {{ __('field_validity_stydy_end') }}
+                                  {{ __('required_field') }} {{ __('validity_end') }}
                                 </div>
                             </div>
                             {{-- fin custom --}}
                                             
+
+
                         </div>
                         <div class="card-footer">
                             <button type="submit" class="btn btn-success"><i class="fas fa-check"></i> {{ __('btn_save') }}</button>
@@ -108,6 +112,10 @@
                                         <th>{{ __('field_program') }}</th>
                                         <th>{{ __('field_plan_estudios') }}</th>
                                         <th>{{ __('field_faculty') }}</th>
+                                        <th>{{ __('field_title_get') }}</th>
+                                        <th>{{ __('field_code_snies') }}</th>
+                                        <th>{{ __('validity_init') }}</th>
+                                        <th>{{ __('validity_end') }}</th>
                                         {{-- <th>{{ __('field_registration') }}</th> --}}
                                         <th>{{ __('field_status') }}</th>
                                         <th>{{ __('field_action') }}</th>
@@ -120,6 +128,10 @@
                                         <td>{{ $row->title }}</td>
                                         <td>{{ $row->shortcode }}</td>
                                         <td>{{ $row->faculty->title ?? '' }}</td>
+                                        <td>{{ $row->title_get }}</td>
+                                        <td>{{ $row->code_snies }}</td>
+                                        <td>{{ $row->validity_init }}</td>
+                                        <td>{{ $row->validity_end }}</td>
                                         {{-- <td>
                                             @if( $row->registration == 1 )
                                             <span class="badge badge-primary">{{ __('status_open') }}</span>
