@@ -836,6 +836,11 @@
     "homologable":"Homologable",
     "minimum_grade_approved":"Minimum grade approved",
     "field_start":"Start",
-    "field_ends":"Ends"
+    "field_ends":"Ends",
+
+    "field_sufficiency":"Sufficiency",
+    "field_modality":"Modality",
+    "Qualification":"Qualification",
+    "Qualifying_minimum_note":"Qualifying Minimum Note"
 
 }

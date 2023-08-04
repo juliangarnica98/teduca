@@ -775,5 +775,11 @@
     "homologable":"Homologable",
     "minimum_grade_approved":"Nota mínima homologable",
     "field_start":"Inicia",
-    "field_ends":"Termina"
+    "field_ends":"Termina",
+
+    "field_sufficiency":"Suficiencia",
+    "field_modality":"Modalidad",
+    "Qualification":"Habilitación",
+    "Qualifying_minimum_note":"Nota minima habitable"
+    
 }

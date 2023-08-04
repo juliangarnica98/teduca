@@ -24,7 +24,7 @@ return new class extends Migration
             $table->string('homologable')->nullable();
             $table->double('minimum_grade_approved')->nullable();
             $table->date('field_start')->nullable();
-            $table->date('field_ends ')->nullable();
+            $table->date('field_ends')->nullable();
             
         });
     }

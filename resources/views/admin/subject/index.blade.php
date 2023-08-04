@@ -96,8 +96,26 @@
                                         <th>{{ __('field_subject_type') }}</th>
                                         <th>{{ __('field_class_type') }}</th>
                                         <th>{{ __('field_program') }}</th>
+
+                                        <th>{{ __('field_intensity') }}</th>
+                                        <th>{{ __('theoretical_unit') }}</th>
+                                        <th>{{ __('practical_unit') }}</th>
+
+                                        <th>{{ __('minimum_note') }}</th>
+                                        <th>{{ __('maximum_note') }}</th>
+                                        <th>{{ __('passing_grade') }}</th>
+                                        <th>{{ __('homologable') }}</th>
+                                        <th>{{ __('minimum_grade_approved') }}</th>
+                                        <th>{{ __('field_start') }}</th>
+                                        <th>{{ __('field_ends') }}</th>
+                                        <th>{{ __('Qualification') }}</th>
+                                        <th>{{ __('field_sufficiency') }}</th>
+                                        <th>{{ __('Qualifying_minimum_note') }}</th>
+                                        <th>{{ __('field_modality') }}</th>
+
                                         <th>{{ __('field_status') }}</th>
                                         <th>{{ __('field_action') }}</th>
+                                        
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -129,6 +147,25 @@
                                                 <br/>
                                             @endforeach
                                         </td>
+
+
+                                        <td>{{ $row->field_intensity }}</td>
+                                        <td>{{ $row->theoretical_unit }}</td>
+                                        <td>{{ $row->practical_unit }}</td>
+
+                                        <td>{{ $row->minimum_note }}</td>
+                                        <td>{{ $row->maximum_note }}</td>
+                                        <td>{{ $row->passing_grade }}</td>
+                                        <td>{{ $row->homologable }}</td>
+                                        <td>{{ $row->minimum_grade_approved }}</td>
+                                        <td>{{ $row->field_start }}</td>
+                                        <td>{{ $row->field_ends }}</td>
+                                        <td>{{ $row->Qualification }}</td>
+                                        <td>{{ $row->field_sufficiency }}</td>
+                                        <td>{{ $row->Qualifying_minimum_note }}</td>
+                                        <td>{{ $row->field_modality }}</td>
+
+                                
                                         <td>
                                             @if( $row->status == 1 )
                                             <span class="badge badge-pill badge-success">{{ __('status_active') }}</span>

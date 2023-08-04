@@ -137,7 +137,7 @@ class SubjectController extends Controller
     {
         // Field Validation
         $request->validate([
-            'title' => 'required|max:191|unique:subjects,title',
+            'title' => 'required|max:191',
             'code' => 'required|max:191|unique:subjects,code',
             'credit_hour' => 'required',
             'subject_type' => 'required',
@@ -151,7 +151,11 @@ class SubjectController extends Controller
             'homologable'=> 'required',
             'minimum_grade_approved'=> 'required',
             'field_start'=> 'required',
-            'field_ends'=> 'required'
+            'field_ends'=> 'required',
+            'Qualification'=>'required',
+            'field_sufficiency'=>'required',
+            'field_modality'=>'required',
+            'Qualifying_minimum_note'=>'required'
         ]);
 
 
@@ -176,6 +180,10 @@ class SubjectController extends Controller
         $subject->minimum_grade_approved= $request->minimum_grade_approved;
         $subject->field_start= $request->field_start;
         $subject->field_ends= $request->field_ends;
+        $subject->Qualification=$request->Qualification;
+        $subject->field_sufficiency=$request->field_sufficiency;
+        $subject->field_modality=$request->field_modality;
+        $subject->Qualifying_minimum_note=$request->Qualifying_minimum_note;
         $subject->save();
 
         // Attach
@@ -237,7 +245,8 @@ class SubjectController extends Controller
     {
         // Field Validation
         $request->validate([
-            'title' => 'required|max:191|unique:subjects,title,'.$subject->id,
+            'title' => 'required|max:191',
+            // 'title' => 'required|max:191|unique:subjects,title,'.$subject->id,
             'code' => 'required|max:191|unique:subjects,code,'.$subject->id,
             'credit_hour' => 'required',
             'subject_type' => 'required',
@@ -251,7 +260,11 @@ class SubjectController extends Controller
             'homologable'=> 'required',
             'minimum_grade_approved'=> 'required',
             'field_start'=> 'required',
-            'field_ends'=> 'required'
+            'field_ends'=> 'required',
+            'Qualification'=>'required',
+            'field_sufficiency'=>'required',
+            'field_modality'=>'required',
+            'Qualifying_minimum_note'=>'required',
         ]);
 
 
@@ -276,6 +289,10 @@ class SubjectController extends Controller
         $subject->minimum_grade_approved= $request->minimum_grade_approved;
         $subject->field_start= $request->field_start;
         $subject->field_ends= $request->field_ends;
+        $subject->Qualification=$request->Qualification;
+        $subject->field_sufficiency=$request->field_sufficiency;
+        $subject->field_modality=$request->field_modality;
+        $subject->Qualifying_minimum_note=$request->Qualifying_minimum_note;
         $subject->save();
 
         // Attach Update
