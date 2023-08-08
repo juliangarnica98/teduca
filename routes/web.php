@@ -70,7 +70,8 @@ Route::middleware(['XSS'])->prefix('admin')->group(function () {
 Route::middleware(['auth:web', 'XSS'])->name('admin.')->namespace('Admin')->prefix('admin')->group(function () {
 
     
-    Route::get('admission/preregistration', 'PreregistrationController@index')->name('preregistration.index');
+    Route::get('admission/preregistration', 'PreregistrationController@show')->name('preregistration.show');
+    Route::get('admission/preregistration/aplicaciones', 'PreregistrationController@index')->name('preregistration.index');
     
     // Dashboard Route
     // Route::get('/', 'DashboardController@index')->name('dashboard.index');

@@ -8,7 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Preregistration extends Model
 {
     use HasFactory;
+
+    protected $table = 'preregistrations';
     protected $fillable = [
-        'date_interest','date_interest','complete_names','full_last_names','document_types','document_number','expedition_date','place_document','contact_number','email','academic_program','academic_interest','status'
+        'fecha_de_inters','nombres','apellidos','tipos_de_documento','numero_de_documento','fecha_de_expedicin_del_documento','ubicacin_del_documento','numero_celular_de_contacto','correo_electrnico','programa_acadmico', 'por_que_le_interesa_esta_programa_acadmico','status'
     ];
 }

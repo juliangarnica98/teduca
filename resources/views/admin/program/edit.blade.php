@@ -27,20 +27,20 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="title" class="form-label">{{ __('field_title') }} <span>*</span></label>
+                       <label for="title" class="form-label">{{ __('field_program') }} <span>*</span></label>
                         <input type="text" class="form-control" name="title" id="title" value="{{ $row->title }}" required>
 
                         <div class="invalid-feedback">
-                          {{ __('required_field') }} {{ __('field_title') }}
+                          {{ __('required_field') }} {{ __('field_program') }}
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label for="shortcode" class="form-label">{{ __('field_shortcode') }} <span>*</span></label>
+                      <label for="shortcode" class="form-label">{{ __('field_plan_estudios') }} <span>*</span></label>
                         <input type="text" class="form-control" name="shortcode" id="shortcode" value="{{ $row->shortcode }}" required>
 
                         <div class="invalid-feedback">
-                          {{ __('required_field') }} {{ __('field_shortcode') }}
+                          {{ __('required_field') }} {{ __('field_plan_estudios') }}
                         </div>
                     </div>
                     

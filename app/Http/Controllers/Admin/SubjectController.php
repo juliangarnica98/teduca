@@ -145,17 +145,17 @@ class SubjectController extends Controller
             'field_intensity'=> 'required',
             'theoretical_unit'=> 'required',
             'practical_unit'=> 'required',
-            'minimum_note'=> 'required',
-            'maximum_note'=> 'required',
-            'passing_grade'=> 'required',
+            'minimum_note'=> 'required|numeric|between:0,5',
+            'maximum_note'=> 'required|numeric|between:0,5',
+            'passing_grade'=> 'required|numeric|between:0,5',
             'homologable'=> 'required',
-            'minimum_grade_approved'=> 'required',
+            'minimum_grade_approved'=> 'required|numeric|between:0,5',
             'field_start'=> 'required',
             'field_ends'=> 'required',
             'Qualification'=>'required',
             'field_sufficiency'=>'required',
             'field_modality'=>'required',
-            'Qualifying_minimum_note'=>'required'
+            'Qualifying_minimum_note'=>'required|numeric|between:0,5',
         ]);
 
 
@@ -254,17 +254,17 @@ class SubjectController extends Controller
             'field_intensity'=> 'required',
             'theoretical_unit'=> 'required',
             'practical_unit'=> 'required',
-            'minimum_note'=> 'required',
-            'maximum_note'=> 'required',
-            'passing_grade'=> 'required',
+            'minimum_note'=> 'required|numeric|between:0,5',
+            'maximum_note'=> 'required|numeric|between:0,5',
+            'passing_grade'=> 'required|numeric|between:0,5',
             'homologable'=> 'required',
-            'minimum_grade_approved'=> 'required',
+            'minimum_grade_approved'=> 'required|numeric|between:0,5',
             'field_start'=> 'required',
             'field_ends'=> 'required',
             'Qualification'=>'required',
             'field_sufficiency'=>'required',
             'field_modality'=>'required',
-            'Qualifying_minimum_note'=>'required',
+            'Qualifying_minimum_note'=>'required|numeric|between:0,5',
         ]);
 
 

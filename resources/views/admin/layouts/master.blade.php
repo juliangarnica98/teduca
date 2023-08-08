@@ -17,9 +17,9 @@
     <!-- [ Pre-loader ] End -->
 
     <!-- [ navigation menu ] start -->
-    <nav class="pcoded-navbar active-lightblue title-lightblue navbar-lightblue brand-lightblue navbar-image-4 menu-item-icon-style2 {{\Cookie::get('sidebar')}}">
-        <div class="navbar-wrapper">
-            <div class="navbar-brand header-logo">
+    <nav class="pcoded-navbar active-lightblue title-lightblue navbar-lightblue brand-lightblue navbar-image-4 menu-item-icon-style2 {{\Cookie::get('sidebar')}}" style="background-color: #B60007">
+        <div class="navbar-wrapper" >
+            <div class="navbar-brand header-logo" style="background-color: #B60007">
                 @if(isset($setting))
                 @if(is_file('uploads/setting/'.$setting->logo_path))
                 <a href="{{ route('admin.dashboard.index') }}" class="b-brand">

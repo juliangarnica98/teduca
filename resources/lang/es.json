@@ -591,7 +591,9 @@
     "module_phone_log": "Registros de teléfono",
     "module_postal_exchange": "Intercambio postal",
     "module_postal_type": "Tipo postal",
-    "module_preregistration": "Inscripciones",
+    "module_preregistration": "Preinscripción|Preinscripciones",
+    "module_preregistro_admin":"Administración|Administración",
+    "module_preregistro_aplications":"Aplicación|Aplicaciones",
     "module_profile": "Mi perfil",
     "module_program": "Programas",
     "module_province": "Estado",
@@ -780,6 +782,16 @@
     "field_sufficiency":"Suficiencia",
     "field_modality":"Modalidad",
     "Qualification":"Habilitación",
-    "Qualifying_minimum_note":"Nota minima habitable"
+    "Qualifying_minimum_note":"Nota minima habilitable",
+
+
+    "field_interesting_date":"Fecha de interes",
+    "academic_program":"Programa academico",
+    "field_document_type":"Tipo de documento",
+    "field_document_number":"Numero de documento",
+    "expedition_date":"Fecha de expedición",
+    "document_location":"Ubicación del documento",
+    "cell_phone_number":"Número de celular",
+    "interest":"Interes"
     
 }

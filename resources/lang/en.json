@@ -144,6 +144,8 @@
     "module_admission" : "Admission|Admission",
     "module_application" : "Application|Applications",
     "module_preregistration" : "Preregistration|Preregistrations",
+    "module_preregistro_admin":"Admin|Admin",
+    "module_preregistro_aplications":"Application|Applications",
     "module_registration" : "New Registration|New Registrations",
     "module_student_transfer" : "Student Transfer|Student Transfers",
     "module_transfer_in" : "Transfer In",
@@ -841,6 +843,19 @@
     "field_sufficiency":"Sufficiency",
     "field_modality":"Modality",
     "Qualification":"Qualification",
-    "Qualifying_minimum_note":"Qualifying Minimum Note"
+    "Qualifying_minimum_note":"Qualifying Minimum Note",
+
+    "field_interesting_date":"Interesting date",
+    "academic_program":"Academic program",
+    "field_document_type":"Document type",
+    "field_document_number":"Document number",
+    "expedition_date":"Expedition date",
+    "document_location":"Document location",
+    "cell_phone_number":"Cell phone number",
+    "interest":"Interest"
+
+
+    
+                
 
 }

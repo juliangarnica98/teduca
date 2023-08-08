@@ -1,22 +1,70 @@
 @extends('admin.layouts.master')
-{{-- @section('title', $title) --}}
-<style>
-    .iframe-responsive::-webkit-scrollbar{
-        display: none;
-    }
-    .iframe-responsive{
-        height: calc(100% - 150px);  
-        border: 0;  
-    }
-    
-   
-</style>
+@section('title', $title)
 @section('content')
 
-<div class="conten">
-    <iframe scrolling="no" class="iframe-responsive"  width="100%"  src="https://dev.teduca.co/preinscripcion/form-preinscripcion/">
-    </iframe>
-</div>
 
+<div class="main-body">
+    <div class="page-wrapper">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>{{ $title }} {{ __('list') }}</h5>
+                    </div>
+                    <div class="card-block">
+                        <div class="table-responsive">
+                            <table id="basic-table" class="display table nowrap table-striped table-hover" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>{{ __('field_interesting_date') }}</th>
+                                        <th>{{ __('field_name') }}</th>
+                                        <th>{{ __('field_last_name') }}</th>
+                                        <th>{{ __('field_document_type') }}</th>
+                                        <th>{{ __('field_document_number') }}</th>
+                                        <th>{{ __('expedition_date') }}</th>
+                                        <th>{{ __('document_location') }}</th>
+                                        <th>{{ __('cell_phone_number') }}</th>
+                                        <th>{{ __('field_email') }}</th>
+                                        <th>{{ __('academic_program') }}</th>
+                                        <th>{{ __('interest') }}</th>
+                                        <th>{{ __('field_status') }}</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                  @foreach( $rows as $key => $row )
+                                    <tr>
+                                        <td>{{ $key + 1 }}</td>
+                                        <td>{{ $row->fecha_de_inters }}</td>
+                                        <td>{{ $row->nombres }}</td>
+                                        <td>{{ $row->apellidos }}</td>
+                                        <td>{{ $row->tipos_de_documento }}</td>
+                                        <td>{{ $row->numero_de_documento }}</td>
+                                        <td>{{ $row->fecha_de_expedicin_del_documento }}</td>
+                                        <td>{{ $row->ubicacin_del_documento }}</td>
+                                        <td>{{ $row->numero_celular_de_contacto }}</td>
+                                        <td>{{ $row->correo_electrnico }}</td>
+                                        <td>{{ $row->programa_acadmico }}</td>
+                                        <td>{{ $row->por_que_le_interesa_esta_programa_acadmico }}</td>
+                                        <td>
+                                            @if( $row->status == 1 )
+                                            <span class="badge badge-pill badge-success">{{ __('status_active') }}</span>
+                                            @else
+                                            <span class="badge badge-pill badge-danger">{{ __('status_inactive') }}</span>
+                                            @endif
+                                        </td>
+                                      
+                                    </tr>
+                                  @endforeach
+                                </tbody>
+                            </table>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 @endsection

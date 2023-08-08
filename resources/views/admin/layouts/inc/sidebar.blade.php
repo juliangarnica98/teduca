@@ -9,7 +9,7 @@
             </a>
         </li>
 
-        @canany(['application-create', 'application-view', 'student-create', 'student-view', 'student-password-print', 'student-password-change', 'student-card', 'student-transfer-in-create', 'student-transfer-in-view', 'student-transfer-out-create', 'student-transfer-out-view', 'status-type-create', 'status-type-view', 'id-card-setting-view'])
+        @canany(['application-create', 'application-view', 'preregistration-show','student-create', 'student-view', 'student-password-print', 'student-password-change', 'student-card', 'student-transfer-in-create', 'student-transfer-in-view', 'student-transfer-out-create', 'student-transfer-out-view', 'status-type-create', 'status-type-view', 'id-card-setting-view'])
         <li class="nav-item pcoded-hasmenu {{ Request::is('admin/admission*') ? 'active' : '' }}">
             <a href="#!" class="nav-link">
                 <span class="pcoded-micon"><i class="fas fa-university"></i></span>
@@ -20,11 +20,25 @@
                 <li class="{{ Request::is('admin/admission/application*') ? 'active' : '' }}"><a href="{{ route('admin.application.index') }}" class="">{{ trans_choice('module_application', 2) }}</a></li>
                 @endcanany
 
-                {{-- @canany(['preregistration-create'])
-                <li class="{{ Request::is('admin/admission/preregistration*') ? 'active' : '' }}"><a href="{{ route('admin.preregistration.index') }}" class="">{{ trans_choice('module_preregistration', 2) }}</a></li>
-                @endcanany --}}
+                @canany(['preregistration-view','preregistration-show'])
+                <li class="nav-item pcoded-hasmenu {{ Request::is('admin/admission/preregistration*') ? 'active' : '' }}">
+                    <a href="#!" class="nav-link">
+                        <span class="pcoded-mtext">{{ trans_choice('module_preregistration', 2) }}</span>
+                    </a>
+                    <ul class="pcoded-submenu">
+                        @canany(['preregistration-view'])
+                        <li class="{{ Request::is('admin/admission/preregistration') ? 'active' : '' }}"><a href="{{ route('admin.preregistration.index') }}" class="">{{ trans_choice('module_preregistro_aplications', 2) }}</a></li>
+                        @endcanany
+                        @canany(['preregistration-show'])
+                        <li class="{{ Request::is('admin/admission/preregistration') ? 'active' : '' }}"><a href="{{ route('admin.preregistration.show') }}" class="">{{ trans_choice('module_preregistro_admin', 2) }}</a></li>
+                        @endcanany
+                    </ul>
+                
+                </li>
+                
+                @endcanany 
 
-                <li class=""><a href="{{ route('admin.preregistration.index') }}" class="">{{ trans_choice('module_preregistration', 1) }}</a></li>
+                {{-- <li class=""><a href="{{ route('admin.preregistration.index') }}" class="">{{ trans_choice('module_preregistration', 1) }}</a></li> --}}
 
                 @canany(['student-create'])
                 <li class="{{ Request::is('admin/admission/student/create') ? 'active' : '' }}"><a href="{{ route('admin.student.create') }}" class="">{{ trans_choice('module_registration', 1) }}</a></li>

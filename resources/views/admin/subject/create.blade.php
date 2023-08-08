@@ -93,7 +93,7 @@
                                     {{-- custom --}}
                                     <div class="form-group col-md-4">
                                         <label for="credit_hour">{{ __('field_intensity') }} <span>*</span></label>
-                                        <input type="number" class="form-control autonumber" name="field_intensity"
+                                        <input type="text" class="form-control autonumber" name="field_intensity"
                                             id="field_intensity" value="{{ old('field_intensity') }}" required
                                             data-v-max="999999999" data-v-min="0">
 
@@ -103,7 +103,7 @@
                                     </div>
                                     <div class="form-group col-md-4">
                                         <label for="credit_hour">{{ __('theoretical_unit') }} <span>*</span></label>
-                                        <input type="number" class="form-control autonumber" name="theoretical_unit"
+                                        <input type="text" class="form-control autonumber" name="theoretical_unit"
                                             id="theoretical_unit" value="{{ old('theoretical_unit') }}" required
                                             data-v-max="999999999" data-v-min="0">
 
@@ -113,7 +113,7 @@
                                     </div>
                                     <div class="form-group col-md-4">
                                         <label for="credit_hour">{{ __('practical_unit') }} <span>*</span></label>
-                                        <input type="number" class="form-control autonumber" name="practical_unit"
+                                        <input type="text" class="form-control autonumber" name="practical_unit"
                                             id="practical_unit" value="{{ old('practical_unit') }}" required
                                             data-v-max="999999999" data-v-min="0">
 
@@ -123,7 +123,7 @@
                                     </div>
                                     <div class="form-group col-md-4">
                                         <label for="credit_hour">{{ __('minimum_note') }} <span>*</span></label>
-                                        <input type="number" class="form-control autonumber" name="minimum_note"
+                                        <input type="text" class="form-control autonumber" name="minimum_note"
                                             id="minimum_note" value="{{ old('minimum_note') }}" required
                                             data-v-max="999999999" data-v-min="0">
 
@@ -133,7 +133,7 @@
                                     </div>
                                     <div class="form-group col-md-4">
                                         <label for="credit_hour">{{ __('maximum_note') }} <span>*</span></label>
-                                        <input type="number" class="form-control autonumber" name="maximum_note"
+                                        <input type="text" class="form-control autonumber" name="maximum_note"
                                             id="maximum_note" value="{{ old('maximum_note') }}" required
                                             data-v-max="999999999" data-v-min="0">
 
@@ -143,7 +143,7 @@
                                     </div>
                                     <div class="form-group col-md-4">
                                         <label for="credit_hour">{{ __('passing_grade') }} <span>*</span></label>
-                                        <input type="number" class="form-control autonumber" name="passing_grade"
+                                        <input type="text" class="form-control autonumber" name="passing_grade"
                                             id="passing_grade" value="{{ old('passing_grade') }}" required
                                             data-v-max="999999999" data-v-min="0">
 
@@ -164,7 +164,7 @@
                                     </div>
                                     <div class="form-group col-md-4">
                                         <label for="credit_hour">{{ __('minimum_grade_approved') }} <span>*</span></label>
-                                        <input type="number" class="form-control autonumber"
+                                        <input type="text" class="form-control autonumber"
                                             name="minimum_grade_approved" id="minimum_grade_approved"
                                             value="{{ old('minimum_grade_approved') }}" required data-v-max="999999999"
                                             data-v-min="0">
@@ -232,7 +232,7 @@
                                     <div class="form-group col-md-4">
                                         <label for="credit_hour">{{ __('Qualifying_minimum_note') }}
                                             <span>*</span></label>
-                                        <input type="number" class="form-control autonumber"
+                                        <input type="text" class="form-control autonumber"
                                             name="Qualifying_minimum_note" id="Qualifying_minimum_note"
                                             value="{{ old('Qualifying_minimum_note') }}" required data-v-max="999999999"
                                             data-v-min="0">
