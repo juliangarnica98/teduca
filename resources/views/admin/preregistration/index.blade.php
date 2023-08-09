@@ -22,8 +22,11 @@
                                         <th>{{ __('field_last_name') }}</th>
                                         <th>{{ __('field_document_type') }}</th>
                                         <th>{{ __('field_document_number') }}</th>
+
                                         <th>{{ __('expedition_date') }}</th>
-                                        <th>{{ __('document_location') }}</th>
+
+                                        <th>{{ __('municipio_location') }}</th>
+                                        <th>{{ __('departamento_location') }}</th>
                                         <th>{{ __('cell_phone_number') }}</th>
                                         <th>{{ __('field_email') }}</th>
                                         <th>{{ __('academic_program') }}</th>
@@ -40,8 +43,10 @@
                                         <td>{{ $row->apellidos }}</td>
                                         <td>{{ $row->tipos_de_documento }}</td>
                                         <td>{{ $row->numero_de_documento }}</td>
-                                        <td>{{ $row->fecha_de_expedicin_del_documento }}</td>
-                                        <td>{{ $row->ubicacin_del_documento }}</td>
+                                        <td>{{ $row->fecha_de_expedicion }}</td>
+                                        <td>{{ $row->ciudad_de_expedicion }}</td>
+                                        <td>{{ $row->departamento }}</td>
+                                        {{-- <td>{{ $row->ubicacin_del_documento }}</td> --}}
                                         <td>{{ $row->numero_celular_de_contacto }}</td>
                                         <td>{{ $row->correo_electrnico }}</td>
                                         <td>{{ $row->programa_acadmico }}</td>

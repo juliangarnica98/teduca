@@ -850,7 +850,10 @@
     "field_document_type":"Document type",
     "field_document_number":"Document number",
     "expedition_date":"Expedition date",
-    "document_location":"Document location",
+    
+    "municipio_location":"Municipio del documento",
+    "departamento_location":"Departmento del documento",
+    
     "cell_phone_number":"Cell phone number",
     "interest":"Interest"
 

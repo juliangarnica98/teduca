@@ -11,6 +11,19 @@ class Preregistration extends Model
 
     protected $table = 'preregistrations';
     protected $fillable = [
-        'fecha_de_inters','nombres','apellidos','tipos_de_documento','numero_de_documento','fecha_de_expedicin_del_documento','ubicacin_del_documento','numero_celular_de_contacto','correo_electrnico','programa_acadmico', 'por_que_le_interesa_esta_programa_acadmico','status'
+        'db4_status',
+        'fecha_de_inters',
+        'nombres',
+        'apellidos',
+        'tipos_de_documento',
+        'numero_de_documento',
+        'fecha_de_expedicion',
+        'ciudad_de_expedicion',
+        'departamento',
+        'numero_celular_de_contacto',
+        'correo_electrnico',
+        'programa_acadmico',
+        'por_que_le_interesa_esta_programa_acadmico',
+        'status'
     ];
 }

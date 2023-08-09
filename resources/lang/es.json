@@ -790,7 +790,8 @@
     "field_document_type":"Tipo de documento",
     "field_document_number":"Numero de documento",
     "expedition_date":"Fecha de expedición",
-    "document_location":"Ubicación del documento",
+    "municipio_location":"Municipio del documento",
+    "departamento_location":"Departmento del documento",
     "cell_phone_number":"Número de celular",
     "interest":"Interes"
     
